@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Janou
 
-Things you may want to cover:
+And this is my first app created with the help of
 
-* Ruby version
+* My tutor
 
-* System dependencies
+* Stackoverflow
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Patience
