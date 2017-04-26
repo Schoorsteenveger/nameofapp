@@ -1,4 +1,35 @@
 <header class="header-contact main-header">
   <h1>Contact</h1>
-  <h2>Please fill in the contactform</h2>
+  <h2>Send us a message</h2>
+  <row clas="row" id="contact">
+    <div class="col-lg-4 col-md-5 col-xs-12 col-sm-6 contact-column">
+      <p>Happy Bikeshop Amsterdam</p>
+      <p><span class="glyphicon glyphicon-earphone"></span> +31641015726 </p>
+      <p> Call us now <a href="tel:+31641015726"><span class="glyphicon glyphicon-earphone"></span></a></p>
+    </div><!--contact column-->
+
+    <div class="col-lg-8 col-md-7 col-xs-12 col-sm-6">
+      <h3>Anything you want always wanted to know about bikes:</h3>
+      <form id="contact">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type ="textBox" minlength=10 id="name" class="form-control" placeholder="*Name" required=”required”>
+        </div><!--end form-group-->
+
+        <div class="form-group">
+          <label for="name">Email Adress</label>
+          <input type=”email” name=”email” id=”email” title=”enter your email” class="form-control" placeholder="*Your email address" required=”required”>
+        </div><!--end form-group-->
+
+        <div class="form-group">
+          <label for="name">Your message</label>
+          <textarea minlength=20 placeholder="Your message here" class="form-control" class="messagebox" style="resize:none" cols="60" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-success">Submit</button>
+      </form>
+    </div><!--end column -->
+  </div><!--end row-->
 </header>
+<div class="container">
+
+</div><!--end container-->

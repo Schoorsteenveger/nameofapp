@@ -6,7 +6,7 @@
 html, body {
   font-family: 'Righteous', cursive;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
 }
 
 .index-bg {
@@ -35,7 +35,7 @@ html, body {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4.1em;
   font-weight: 900;
   color: rgb(255, 255, 255);
   padding-top: 2.5em;
@@ -50,47 +50,48 @@ h2 {
 
 p{
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.4em;
+  font-weight: 100;
   color: rgb(65, 244, 169)
 }
 
 // Navigation
 
-.navbar {
-  margin-bottom: 0;
+.navbar, navbar-default{
+  position: absolute;
+  display: inline-block;
+  margin: 15px 12px 10px 20px;
+  background-color: transparent;
+  padding-bottom: 35px;
+  border-color: transparent;
 }
 
-.navbar-default {
-  color: #000;
-  background-color: rgb(244, 170, 66);
-  min-height: 100px;
-  padding-top: 20px;
-  border-radius: 0px;
-  margin: 0 -10px -20px -10px
+.navbar-default, {
+  background-color: transparent;
 }
 
-.navbar-default,
-.navbar-collapse,
-.navbar-default {
-  background-color: rgb(244, 170, 66);
+@media (max-width: 425px) {
+  .navbar-collapse {
+  background-color: black;
+  z-index: 999;
+  }
 }
 
-.navbar-default .navbar-brand { color: #FFF; }
+.navbar .navbar-brand { color: transparent; }
 
-.navbar-default .navbar-nav>li>a {
-  background-color: rgb(244, 170, 66);
-  color: #FFF;
+.navbar .navbar-nav>li>a {
+  background-color: transparent;
+  color: rgb(249, 187, 3);
   font-size: 25px;
 }
 
-.navbar-nav>li>.dropdown-menu { background-color: rgba(76, 149, 173, 0.5); }
+.navbar-nav>li>.dropdown-menu { background-color: rgba(254, 255, 255, 0.5); }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background-color: rgba(249, 187, 3, 1);
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: rgb(64, 243, 148); }
+.navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: rgb(64, 243, 148); }
 
 .navbar-nav>.open>a:focus,
 .dropdown-menu a,
@@ -122,15 +123,15 @@ p{
   height: 400px;
   margin: -25px 0 20px;
   background-color: grey;
-  padding-top: 6.5em;
 }
 
 .header-about {
-  background-image: url("frog.jpg");
+  background-image: url("color-bikes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin-bottom: 35px;
 }
 
 // Contact
@@ -140,10 +141,22 @@ p{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  height:1500px;
 }
+
 .header-contact h1 {
   color: rgba(249, 187, 3, 1);
 }
+
+.contact-column p {
+  text-align:left;
+}
+
+.message-box { width: 80%; }
+
+.form-control { width: 80%; }
+
+label { color: #34495e; }
 
 // Images
 
@@ -159,7 +172,25 @@ p{
   background-position: center;
 }
 
+.owner-image {
+margin: 0 auto;
+padding-bottom: 35px;
+
+}
 // About
+.container p {
+  text-align: left;
+  color: #000;
+}
+.column-about {
+  margin:0 auto;
+  display:block;
+  padding-bottom:35px;
+}
+.container h2 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 //Footer
 
