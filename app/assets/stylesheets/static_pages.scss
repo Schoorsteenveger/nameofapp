@@ -122,7 +122,7 @@ p {
 }
 
 .header-about {
-  background-image: url("color-bikes.jpg");
+  background-image: asset-url("color-bikes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +132,7 @@ p {
 
 // Contact
 .header-contact {
-  background-image: url("bicycle.png");
+  background-image: asset-url("bicycle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
