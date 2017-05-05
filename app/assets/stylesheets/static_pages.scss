@@ -6,7 +6,7 @@
 html, body {
   font-family: 'Righteous', cursive;
   width: 100%;
-  background-color: transparent;
+  background-color: #eee;
 }
 
 .index-bg {
@@ -58,11 +58,10 @@ p {
 
 // Navigation
 
-.navbar, navbar-default{
-  display: inline-block;
-  margin: 15px 12px 10px 20px;
+.navbar, navbar-default, navbar-collapse {
+  display: block;
   background-color: transparent;
-  border-color: transparent;
+  margin:35px 0 5px 0;
 }
 
 @media (max-width: 425px) {
@@ -72,11 +71,14 @@ p {
   }
 }
 
-.navbar .navbar-brand { color: transparent; }
+.navbar, .navbar-brand {
+  color: transparent;
+  border-color: transparent;
+}
 
 .navbar .navbar-nav>li>a {
   background-color: transparent;
-  color: rgb(249, 187, 3);
+  color: rgb(241, 255, 72);
   font-size: 25px;
 }
 
@@ -86,20 +88,12 @@ p {
   background-color: rgba(249, 187, 3, 1);
 }
 
-.navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: rgb(64, 243, 148); }
-
-.navbar-nav>.open>a:focus,
-.dropdown-menu a,
-.navbar-toggle,
-.navbar-default .navbar-nav>
-.open>a:hover {
-  color: #41f4a9;
-}
+.navbar, .navbar-toggle:focus, .navbar-default, .navbar-toggle:hover { background-color: transparent; }
 
 .navbar-default .navbar-nav>.active>a { background-color: rgba(244, 170, 66, 0.5); }
 
 .navbar-default .navbar-nav>.active>a {
-  color: rgb(14, 23, 0);
+  color: rgb(241, 255, 72);
 }
 
 .btn-default:hover {
