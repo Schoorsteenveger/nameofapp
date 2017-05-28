@@ -1,2 +1,35 @@
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
+<header id="first">
+  <div class="header-content">
+    <div class="inner">
+    <h1>Your source for used bikes in Amsterdam</h1>
+      <br>
+      <p>Promise yourself a classic, old dutch bike and
+      enjoy biking like the Dutchies</p>     
+    </div>
+  </div>  
+</header>
+
+<section id="featured-product">
+  <div class="container-fluid content">
+    <div class="row" id="landingspage">
+      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-inner"> 
+      <a href="#"><h2><%= @featured_product.name %></h2></a>
+      <p id="cursive">Buy the dutch old now with anti theft tracker</p> 
+      <p><%= image_tag(@featured_product.image_url, class: "img-responsive")%></p>
+      <p>Description: <%= @featured_product.description %></p>
+      <br>
+      <p>Colour: <%= @featured_product.colour %></p>
+      <br>
+      <p>Price: <%= @featured_product.price %></p>
+      </div>
+    </div><!--end row-->
+</section>
+
+  <div class="row">
+    <div class ="col-md-4 col-sm-12 column1">
+      
+    </div><!--end column-->
+  </div><!--end row-->
+</div><!--end container-->
+
+

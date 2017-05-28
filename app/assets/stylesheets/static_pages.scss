@@ -4,7 +4,7 @@
 }
 
 html, body {
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous',Open Sans, cursive;
   width: 100%;
 }
 
@@ -46,6 +46,7 @@ h2 {
   font-size: 1.9em;
   font-weight: 400;
   color: rgb(65, 244, 169);
+  margin-bottom: 25px;
 }
 
 p {
@@ -53,8 +54,7 @@ p {
   font-size: 1.4em;
   font-weight: 100;
   color: rgb(65, 244, 169);
-  font-family: 'Helvetica', 'Arial', sans-serif
-
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 // Navigation
@@ -73,33 +73,45 @@ p {
 }
 
 .navbar, .navbar-brand {
-  color: transparent;
   border-color: transparent;
 }
 
 .navbar .navbar-nav>li>a {
   background-color: transparent;
-  color: rgb(241, 255, 72);
+  color: rgb(31, 139, 73);
   font-size: 25px;
 }
 
-.navbar-nav>li>.dropdown-menu { background-color: rgba(254, 255, 255, 0.5); }
-
-.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-  background-color: rgba(249, 187, 3, 1);
+.navbar-nav>li>a.dropdown-menu:hover { 
+  background-color: transparent;
+  color: rgb(92, 184, 92); 
 }
 
-.navbar, .navbar-toggle:focus, .navbar-default, .navbar-toggle:hover { background-color: transparent; }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: rgb(255, 192, 203);
+  background-color: transparent;
+}
 
-.navbar-default .navbar-nav>.active>a { background-color: rgba(244, 170, 66, 0.5); }
+.navbar, .navbar-toggle:focus, .navbar-default, .navbar-toggle:hover { 
+  background-color: transparent;
+}
 
-.navbar-default .navbar-nav>.active>a {
-  color: rgb(241, 255, 72);
+.navbar-default .navbar-nav>.active>a { 
+  background: transparent;
+  color: rgb(186, 189, 148);
 }
 
 .btn-default:hover {
   color: rgba(249, 187, 3, 1);
-  background-color: rgba(0, 130, 173, 0.5);
+}
+
+.dropdown a:hover {
+  color:rgb(186, 189, 143);
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  background-color: transparent;
 }
 
 // Logo
@@ -134,6 +146,8 @@ p {
   background-attachment: fixed;
   height:1700px;
   margin-bottom: -100px;
+  text-align: left;
+  color: #000;
 }
 
 .header-contact h1 {
@@ -152,7 +166,8 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .container,
+  .container-form {
   width: 690px;
   }
 }
@@ -165,7 +180,7 @@ p {
 
 .form-control { width: 80%; }
 
-label { color: #34495e; }
+.label { color: #000; }
 
 // Images
 
@@ -191,13 +206,15 @@ label { color: #34495e; }
   text-align: left;
   color: #000;
 }
+
 .column-about {
   margin:0 auto;
   display:block;
   padding-bottom:35px;
 }
+
 .container h2 {
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 25px;
   text-align: left;
 }

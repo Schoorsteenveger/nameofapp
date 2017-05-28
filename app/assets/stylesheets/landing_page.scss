@@ -1,0 +1,55 @@
+header {
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  width:100%;
+  background-color: #c9c9c9;
+  background: image-url('frog.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  background-attachment: fixed;
+}
+
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 150px 15px;
+  text-align: center;
+  z-index: 2;
+  color: #FFF;
+}
+
+header p {
+  font-family: 'Open Sans, sans-serif';
+  font: 400 regular italic;
+}
+
+@media (min-width: 768px) {
+  header .header-content .inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 750px;
+  }
+}
+
+#cursive {
+  color: #000;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.inner {
+  padding-top:35px;
+}
+
+.text-center, .inner p {
+  font-family: 'Dancing Script',cursive;
+  font-size: 2.3em;
+}
+
+.container-fluid h2 {
+  font-size: -webkit-xxx-large;
+  padding-top: 35px;
+}

@@ -30,8 +30,13 @@
 .add-product {
   text-align: center;
   min-height: 100px;
+  font-size: 1.9em;
 }
 
-
+.add-product a {
+  background-color: rgb(255, 192, 203);
+  margin: 0 auto;
+  padding: 15px;
+}
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
