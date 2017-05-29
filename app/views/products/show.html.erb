@@ -1,10 +1,11 @@
-<div class= "container">
+<div class= "container container-show">
   <div class= "row" id= "row-product">
-    <p id="notice"><%= notice %></p>
+    <p id="notice"><h1><strong></strong>
+      <%= @product.name %></h1><%= notice %></p>
 
     <p>
-      <strong>Name:</strong>
-      <%= @product.name %>
+      <strong></strong>
+      <%= image_tag(@product.image_url, class: "img-responsive") %>
     </p>
 
     <p>
@@ -13,18 +14,8 @@
     </p>
 
     <p>
-      <strong>Image url:</strong>
-      <%= @product.image_url %>
-    </p>
-
-    <p>
-      <strong>Colour:</strong>
-      <%= @product.colour %>
-    </p>
-
-    <p>
       <strong>Price:</strong>
-      <%= @product.price %>
+      €  <%= @product.price %>
     </p>
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>

@@ -62,7 +62,7 @@ p {
 .navbar, navbar-default, navbar-collapse {
   display: block;
   background-color: transparent;
-  margin:35px 0 5px 0;
+  margin: 35px 0 5px 0;
 }
 
 @media (max-width: 425px) {
@@ -79,40 +79,26 @@ p {
 .navbar .navbar-nav>li>a {
   background-color: transparent;
   color: rgb(31, 139, 73);
-  font-size: 25px;
+  font-size: 30px;
 }
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus { color: rgb(197, 197, 152);}
 
-.navbar-nav>li>a.dropdown-menu:hover { 
-  background-color: transparent;
-  color: rgb(92, 184, 92); 
-}
+.dropdown-menu>li>a:hover { color:blue !important}
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus {
   color: rgb(255, 192, 203);
   background-color: transparent;
 }
 
-.navbar, .navbar-toggle:focus, .navbar-default, .navbar-toggle:hover { 
-  background-color: transparent;
+.navbar-toggle:focus, .navbar-toggle:hover { 
+  background-color: rgb(186, 189, 148);  
 }
 
-.navbar-default .navbar-nav>.active>a { 
-  background: transparent;
-  color: rgb(186, 189, 148);
-}
+.navbar-default, .navbar-nav>.active:hover {color: blue;}
 
-.btn-default:hover {
-  color: rgba(249, 187, 3, 1);
-}
+.navbar-default .navbar-nav>.active>a { background: transparent;}
 
-.dropdown a:hover {
-  color:rgb(186, 189, 143);
-  background-color: transparent;
-}
-
-.dropdown-menu {
-  background-color: transparent;
-}
 
 // Logo
 .navbar-brand {
@@ -219,6 +205,7 @@ p {
   text-align: left;
 }
 
+
 //Footer
 footer {
   height: 142px;
@@ -228,6 +215,16 @@ footer {
   background-color: #000;
   padding-top: 35px;
 }
+
+// Containers
+.container-show { height:1200px; }
+
+.container-show h1, #edith1 {
+  color: rgb(249, 187, 3);
+  text-align: center;
+  padding-bottom:35px;
+}
+
 
 // They will automatically be included in application.css.
 
