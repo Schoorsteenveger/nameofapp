@@ -84,7 +84,12 @@ p {
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus { color: rgb(197, 197, 152);}
 
-.dropdown-menu>li>a:hover { color:blue !important}
+.dropdown-menu>li>a:hover { 
+  color: rgb(249, 187, 3);
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus {
   color: rgb(255, 192, 203);
@@ -95,7 +100,12 @@ p {
   background-color: rgb(186, 189, 148);  
 }
 
-.navbar-default, .navbar-nav>.active:hover {color: blue;}
+.navbar-default, .navbar-nav>.active:hover { 
+  color: rgb(249, 187, 3);
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
 
 .navbar-default .navbar-nav>.active>a { background: transparent;}
 
