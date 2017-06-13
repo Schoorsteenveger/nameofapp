@@ -1,4 +1,4 @@
-header {
+#first {
   min-height: 100%;
   position: relative;
   text-align: center;
@@ -21,35 +21,56 @@ header .header-content {
   color: #FFF;
 }
 
-header p {
-  font-family: 'Open Sans, sans-serif';
-  font: 400 regular italic;
-}
-
-@media (min-width: 768px) {
-  header .header-content .inner {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 750px;
-  }
-}
-
 #cursive {
   color: #000;
   text-align: center;
   padding-top: 35px;
 }
 
-.inner {
-  padding-top:35px;
+.col-p {
+  font-size: 1.9em;
+  text-align: left;
+  margin-right: 50px;  
 }
 
-.text-center, .inner p {
-  font-family: 'Dancing Script',cursive;
-  font-size: 2.3em;
+@media screen and (min-width: 1200px){
+  .container-inner {
+    width: 990px;
+  }
 }
 
 .container-fluid h2 {
   font-size: -webkit-xxx-large;
   padding-top: 35px;
+}
+
+.container-fluid p {
+  color: rgb(65, 244, 169)!important;
+  font-family: 'Dancing Script',cursive;
+}
+
+.col-carousel {
+  float: left;
+}
+
+.carousel {
+  position: relative;
+  margin: 15px 5px 15px 5px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+.carousel-indicators li {
+  background-color:#999;
+  border: 0;
+  border-radius: 0;
+}
+
+.carousel-indicators>.active {
+  background-color: #000;
 }

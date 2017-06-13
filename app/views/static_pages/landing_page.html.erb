@@ -1,35 +1,50 @@
 <header id="first">
   <div class="header-content">
-    <div class="inner">
-    <h1>Your source for used bikes in Amsterdam</h1>
-      <br>
-      <p>Promise yourself a classic, old dutch bike and
-      enjoy biking like the Dutchies</p>     
-    </div>
-  </div>  
-</header>
-
-<section id="featured-product">
-  <div class="container-fluid content">
-    <div class="row" id="landingspage">
-      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-inner"> 
-      <a href="#"><h2><%= @featured_product.name %></h2></a>
-      <p id="cursive">Buy the dutch old now with anti theft tracker</p> 
-      <p><%= image_tag(@featured_product.image_url, class: "img-responsive")%></p>
-      <p>Description: <%= @featured_product.description %></p>
-      <br>
-      <p>Colour: <%= @featured_product.colour %></p>
-      <br>
-      <p>Price: <%= @featured_product.price %></p>
+    <div class="container-fluid container-inner inner">
+      <div class="col-lg-12">
+        <h1>Bikeshop Amsterdam</h1>
       </div>
-    </div><!--end row-->
-</section>
 
-  <div class="row">
-    <div class ="col-md-4 col-sm-12 column1">
-      
-    </div><!--end column-->
-  </div><!--end row-->
-</div><!--end container-->
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <% @products.each do |product| %>    
+              <div class="item<%= " active" if product == @products.first %>">
+                <%= image_tag(product.image_url) %>      
+                <div class="carousel-caption">
+                  <%= product.name %>     
+                </div>
+              </div>
+            <% end %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!--end carousel-->
+      </div><!--end col-->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-p">
+          <br>
+          <p>Promise yourself a classic, old dutch bike and
+          enjoy biking like the Dutchies</p>     
+      </div>
+    </div><!--end container-->
+  </div><!--end header-content--> 
+</header>
 
 
