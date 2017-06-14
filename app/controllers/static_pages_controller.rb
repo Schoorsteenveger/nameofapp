@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   # GET /landing_page
   # GET /landing_page.json
   def landing_page
-    @products = Product.limit(4)
+    @products = Product.limit(6)
   end
 end
 

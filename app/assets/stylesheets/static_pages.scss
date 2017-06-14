@@ -168,8 +168,10 @@ p {
   }
 }
 
-.container p {
-  text-align:left;
+.container-fluid p, a {
+  text-align: left;
+  width:100%;
+  color: #000;
 }
 
 .message-box { width: 80%; }

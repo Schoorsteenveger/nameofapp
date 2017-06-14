@@ -19,7 +19,9 @@
           <div class="carousel-inner" role="listbox">
             <% @products.each do |product| %>    
               <div class="item<%= " active" if product == @products.first %>">
-                <%= image_tag(product.image_url) %>      
+                <% if product.image_url %>
+                  <%= image_tag(product.image_url) %>
+                <% end %>      
                 <div class="carousel-caption">
                   <%= product.name %>     
                 </div>
@@ -38,9 +40,9 @@
           </a>
         </div><!--end carousel-->
       </div><!--end col-->
-      <div class="col-lg-4 col-md-4 col-sm-6 col-p">
+      <div class="col-lg-4 col-md-4 col-sm-6">
           <br>
-          <p>Promise yourself a classic, old dutch bike and
+          <p id="col-p">Promise yourself a classic, old dutch bike and
           enjoy biking like the Dutchies</p>     
       </div>
     </div><!--end container-->

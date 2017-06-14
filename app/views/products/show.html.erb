@@ -5,7 +5,9 @@
 
     <p>
       <strong></strong>
-      <%= image_tag(@product.image_url, class: "img-responsive") %>
+      <% if @product.image_url %>
+        <%= image_tag(@product.image_url, class: "img-responsive") %>
+      <% end %>
     </p>
 
     <p>

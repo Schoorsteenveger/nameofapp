@@ -27,10 +27,12 @@ header .header-content {
   padding-top: 35px;
 }
 
-.col-p {
-  font-size: 1.9em;
+#col-p {
+  font-size: 2.4em;
   text-align: left;
-  margin-right: 50px;  
+  margin-right: 50px; 
+  color: rgb(65, 244, 169)!important; 
+  font-family: 'Dancing Script',cursive;
 }
 
 @media screen and (min-width: 1200px){
@@ -44,10 +46,7 @@ header .header-content {
   padding-top: 35px;
 }
 
-.container-fluid p {
-  color: rgb(65, 244, 169)!important;
-  font-family: 'Dancing Script',cursive;
-}
+//* carousel *//
 
 .col-carousel {
   float: left;
@@ -65,12 +64,43 @@ header .header-content {
   background-color: #FFF;
 }
 
+.carousel-indicators {
+  top: 50px;
+}
+
 .carousel-indicators li {
   background-color:#999;
   border: 0;
   border-radius: 0;
+  top: 0.1%;
 }
 
 .carousel-indicators>.active {
   background-color: #000;
+}
+
+.carousel-caption {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.1%;
+  color: #000;
+}
+
+.carousel-control {
+  background-image: none !important;
+  text-shadow: none;
+  color: #fff !important;
+  opacity: 100;
+  width: 7%;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  opacity: 100;
+}
+
+.carousel-inner > .item > a > img {
+  width: 50%;
 }
