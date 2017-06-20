@@ -35,10 +35,10 @@ html, body {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.6em;
+  font-size: 3.2em;
   font-weight: 900;
   color: rgb(255, 255, 255);
-  padding: 2.5em 0;
+  padding: 1.2em 0;
 }
 
 h2 {
@@ -59,7 +59,7 @@ p {
 
 // Navigation
 
-.navbar, navbar-default, navbar-collapse {
+.navbar, navbar-default {
   display: block;
   background-color: transparent;
   margin: 35px 0 5px 0;
@@ -67,12 +67,25 @@ p {
 
 @media (max-width: 425px) {
   .navbar-collapse {
-  background-color: black;
+  background-color: rgb(243, 247, 247);
   z-index: 999;
+  border-color: transparent;
   }
 }
 
-.navbar, .navbar-brand {
+.navbar {
+  border-color: transparent;
+}
+
+.navbar-brand {
+  float: none;
+  height: 50px;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 100px;
+}
+
+.navbar-default .navbar-collapse .navbar-default .navbar-collapse {
   border-color: transparent;
 }
 
@@ -85,7 +98,7 @@ p {
 .navbar-default .navbar-nav>.active>a:focus { color: rgb(197, 197, 152);}
 
 .dropdown-menu>li>a:hover { 
-  color: rgb(249, 187, 3);
+  color: rgb(119, 119, 119);
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
@@ -108,12 +121,6 @@ p {
 }
 
 .navbar-default .navbar-nav>.active>a { background: transparent;}
-
-
-// Logo
-.navbar-brand {
-  padding:0 10px;
-}
 
 // Header
 
@@ -153,7 +160,7 @@ p {
 
 .container-contact {
   display: block;
-  background-color:rgb(245, 245, 245);
+  background-color: rgb(179, 177, 177)
 }
 
 .column-contact,
@@ -162,7 +169,6 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .container,
   .container-form {
   width: 690px;
   }

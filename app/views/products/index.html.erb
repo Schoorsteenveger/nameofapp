@@ -1,19 +1,20 @@
-<div class= "container" id="add-bikes">
+<div class= "container" id="header-bg">
   <p id="notice"><%= notice %></p>
     <h1>Bikes</h1>
 </div>
 
-<div class="container-fluid">
+<div class= "add-product">
+  <h2><%= link_to 'New Product', new_product_path %><h2>
+</div>
+<div class="container container-products">
   <div class= "row">
     <% @products.each do |product| %>
       <%= render partial: "product", locals: {product: product} %>
     <% end %>
   </div><!--end row-->
   <br>
-  <div class= "add-product">
-    <h2><%= link_to 'New Product', new_product_path %><h2>
-  </div>
 </div><!--end container-fluid-->
+
 
 
 

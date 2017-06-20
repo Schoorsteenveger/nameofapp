@@ -10,19 +10,28 @@
   padding-bottom: 35px;
 }
 
-.container-form {
-  background-color: rgba(183, 51, 51, 0.2);
+label {
   display: block;
   margin: 0 auto;
-  padding: 35px 10px;
-  border: solid 2px #d6f1f1;
-  border-radius: 20px;
+  position: relative;
 }
 
-.field {
-  padding-right: 3px;
-  position: relative;
+.container-form {
+  border-color: rgb(0, 0, 0);
+  display: block;
   margin: 0 auto;
+  padding: 35px;
+  border-style: solid;
+}
+
+#product_colour, 
+#product_price,
+#product_name,
+#product_description,
+#product_image_url {
+  margin: 0 auto;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
 }
 
 .new-product {
@@ -43,6 +52,6 @@
 
 #backh2 {
   text-align: center;
-  background-color: rgba(183, 51, 51, 0.2);
   padding: 35px;
+  font-size: 35px;
 }

@@ -35,18 +35,17 @@ header .header-content {
   font-family: 'Dancing Script',cursive;
 }
 
+.container-fluid h2 {
+  font-size: 35px;
+}
+
+//* carousel *//
+
 @media screen and (min-width: 1200px){
   .container-inner {
     width: 990px;
   }
 }
-
-.container-fluid h2 {
-  font-size: -webkit-xxx-large;
-  padding-top: 35px;
-}
-
-//* carousel *//
 
 .col-carousel {
   float: left;
@@ -92,7 +91,7 @@ header .header-content {
   text-shadow: none;
   color: #000;
   opacity: 100;
-  width: 10%;
+  width: 20%;
 }
 
 .carousel-control:hover, .carousel-control:focus {

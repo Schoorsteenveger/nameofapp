@@ -1,42 +1,47 @@
 // Place all the styles related to the products controller here.
-#add-bikes {
-  min-height: 100%;
-  background-color: rgb(255, 126, 172);
-  width: 100%;
-  padding-bottom:35px;
+#header-bg {
+  width:100%;
+  min-height: 350px;;
+  background: image-url('product_header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  padding-top: 35px;
 }
 
-#table-bg {
-  background-color: rgb(195, 126, 255);
+.container-products {
+  width: 90%;
+  padding: 0 45px 0 70px;
 }
 
-.container-fluid h2 {
+.container-products h2{
   color: #000;
+  text-align: left;
+  padding: 0 50px 0 25px;
 }
 
 .description p, a {
   text-align: left;
-  width:100%;
   color: #000;
-}
-
-.row {
-  display:block;
-  width:80%;
-  margin: 0 auto;
-  padding-top:35px;
+  padding: 0 50px 0 25px;
 }
 
 .add-product {
+  padding-top: 45px;
   text-align: center;
   min-height: 100px;
   font-size: 1.9em;
 }
 
 .add-product a {
-  background-color: rgb(255, 192, 203);
+  border-style: solid;
   margin: 0 auto;
   padding: 15px;
+  border-radius: 50px;
+  border-color: rgb(197, 197, 152);
+  font-size: 45px;
 }
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
