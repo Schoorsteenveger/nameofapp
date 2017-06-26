@@ -29,14 +29,27 @@ header .header-content {
 
 #col-p {
   font-size: 2.4em;
-  text-align: left;
-  margin-right: 50px; 
+  text-align: left; 
   color: rgb(65, 244, 169)!important; 
   font-family: 'Dancing Script',cursive;
 }
 
 .container-fluid h2 {
   font-size: 35px;
+}
+
+.column-special-offer {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: yellow;
+  font-style: uppercase;
+  display: flex;
+  padding-top: 35px;
+}
+
+.column-text-lp {
+  margin:0 auto;
 }
 
 //* carousel *//
@@ -103,3 +116,6 @@ header .header-content {
 .carousel-inner > .item > a > img {
   width: 50%;
 }
+
+
+
