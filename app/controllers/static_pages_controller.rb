@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   # GET /landing_page.json
   def landing_page
     @products = Product.limit(6)
+    redirect_to ('/static_pages/contact')
   end
 end
 
