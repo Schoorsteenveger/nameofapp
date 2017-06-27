@@ -6,6 +6,7 @@
 html, body {
   font-family: 'Righteous',Open Sans, cursive;
   width: 100%;
+  height: 100%;
 }
 
 .index-bg {
@@ -254,7 +255,17 @@ footer {
   padding-bottom:35px;
 }
 
+// Results //
+.container-results {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
 
+// Form search //
+.form-group {
+  font-size: 25px;
+}
 // They will automatically be included in application.css.
 
 // You can use Sass (SCSS) here: http://sass-lang.com/

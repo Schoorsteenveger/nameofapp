@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to "/static_pages/landing_page", notice: 'Product was successfully created.' }
+        format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -71,4 +71,11 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
+
+  def search # Displays search form in navbar.
+  end
+
+  def search_results # Display search results
+    @found_products = Product.all
+  end
 end
