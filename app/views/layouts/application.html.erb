@@ -51,14 +51,11 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <%= form_tag search_results_path , method: 'get' do %>
-                <%= text_field_tag  :search_keywords %>
-                <%= submit_tag "Search" %>
-              <% end %>
-            </div>
-          </form>
+          <%= form_tag("/products", method: "get", class:"navbar-form navbar-right") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+          <% end %>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to 'Contact', static_pages_contact_path %></li>
             <li class="dropdown">

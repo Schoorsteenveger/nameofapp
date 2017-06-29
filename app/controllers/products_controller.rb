@@ -4,7 +4,12 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    if params [:q]
+      search_term = params[:q]
+      @products = Product.search(search_term)
+    else
+      @products = Product.all
+    end
   end
 
   # GET /products/1
@@ -71,11 +76,4 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
-
-  def search # Displays search form in navbar.
-  end
-
-  def search_results # Display search results
-    @found_products = Product.all
-  end
 end
