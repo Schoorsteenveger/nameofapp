@@ -176,7 +176,9 @@ p {
 
 .container-contact {
   display: block;
-  background-color: rgb(179, 177, 177)
+  background-color: rgba(179, 177, 177, 0.8);
+  margin: 0 auto;
+  padding-top: 35px;
 }
 
 .column-contact,
@@ -201,6 +203,12 @@ p {
 .form-control { width: 80%; }
 
 .label { color: #000; }
+
+.panel panel-default {
+  height:100%;
+  width: 100%;
+  margin: 0 auto;
+}
 
 // Images
 
@@ -295,7 +303,7 @@ footer {
   font-size: inherit;
 }
 
-.btn, .btn-default {
+.btn, .btn-default, contact-button {
   background-color: #4CAF50;
   border: none;
   color: white;
