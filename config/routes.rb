@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy]
 
   root "static_pages#landing_page"
-  
-  match "static_pages/landing_page" => "static_pages#contact", :via => [:get, :post]
 
   get 'static_pages/index'
 
