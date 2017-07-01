@@ -163,27 +163,28 @@ p {
   background-size: cover;
   background-position: initial;
   background-attachment: fixed;
-  height:1700px;
+  min-height:1700px;
   margin-bottom: -100px;
   text-align: left;
   color: #000;
+  padding-top: 200px;
 }
 
-.header-contact h1 {
-  color: rgba(249, 187, 3, 1);
-  padding-bottom: 35px;
+.header-contact h1, h2, h4, label {
+  color: rgb(105, 101, 90);
 }
 
 .container-contact {
   display: block;
-  background-color: rgba(179, 177, 177, 0.8);
+  background-color: rgba(204, 204, 204, 0.83);
   margin: 0 auto;
   padding-top: 35px;
 }
 
 .column-contact,
-.header-contact h2 {
-  margin: 35px 0 35px 0;
+.header-contact h4{
+  text-align: center;
+  font-size: 35px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,16 +199,14 @@ p {
   color: #000;
 }
 
-.message-box { width: 80%; }
-
-.form-control { width: 80%; }
-
-.label { color: #000; }
-
 .panel panel-default {
   height:100%;
   width: 100%;
   margin: 0 auto;
+}
+
+.label {
+  font-size: 16px;
 }
 
 // Images
