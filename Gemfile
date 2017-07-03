@@ -60,5 +60,8 @@ end
 
 ruby '2.3.4'
 
+# Added Gems
+gem 'devise'
+
 
 
