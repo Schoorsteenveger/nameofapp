@@ -78,9 +78,7 @@ p {
   }
 }
 
-.navbar {
-  border-color: transparent;
-}
+.navbar { border-color: transparent; }
 
 .navbar-brand {
   float: none;
@@ -101,7 +99,7 @@ p {
   font-size: 30px;
 }
 .navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus { color: rgb(197, 197, 152);}
+.navbar-default .navbar-nav>.active>a:focus { color: rgb(31, 139, 73);}
 
 .dropdown-menu>li>a:hover { 
   color: rgb(119, 119, 119);
@@ -111,7 +109,7 @@ p {
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus {
-  color: rgb(255, 192, 203);
+  color: rgb(31, 139, 73);
   background-color: transparent;
 }
 
@@ -120,7 +118,7 @@ p {
 }
 
 .navbar-default, .navbar-nav>.active:hover { 
-  color: rgb(249, 187, 3);
+  color: rgb(164, 164, 126);
   text-decoration: none;
   transition: color 600ms;
   -webkit-transition: color 600ms;
@@ -128,7 +126,8 @@ p {
 
 .navbar-default .navbar-nav>.active>a { background: transparent;}
 
-.btn-search {
+.btn-search,
+.form-control btn {
   height: 35px;
   padding: 0 10px 0 10px;
   background-color: rgb(31, 139, 73);
@@ -172,7 +171,7 @@ p {
 }
 
 .header-contact h1, h2, h4, label {
-  color: rgb(105, 101, 90);
+  color: rgb(68, 68, 68);
 }
 
 .container-contact {
@@ -300,13 +299,16 @@ footer {
   background-color: rgb(31, 139, 73);
   border: none;
   border-radius: 0px;
-  color: white;
-  padding: 16px 32px;
+  color: white; 
   text-decoration: none;
-  margin: 20px 2px;
   cursor: pointer;
   font-size: inherit;
 }
+
+.btn-registration { 
+  background-color: rgb(197, 197, 152);
+  color: #000;
+ }
 // They will automatically be included in application.css.
 
 // You can use Sass (SCSS) here: http://sass-lang.com/

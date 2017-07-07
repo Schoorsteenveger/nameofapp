@@ -13,10 +13,17 @@
   background: rgb(205, 210, 207);
 }
 
-.login-form { 
+.login-form,
+.confirmation-form,
+.passwords-form,
+.forgot-password,
+.container-signup { 
   background-color: rgba(0, 0, 0, .5);
   padding-top: 100px; 
   height: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: rgb(68, 68, 68);
 }
 
 .users h2 { text-align: center; }
@@ -47,14 +54,36 @@
 }
 
 .input-emailfield,
-.off {
+.input-password,
+.input-confirmation {
   display: block;
   width: 100%;
   padding: 5px;
   font-size: 16px;
   border-radius: 0;
   -webkit-appearance: none;
+  font-size: medium;
 }
+
+// Sign up //
+
+.container-signup {
+  padding: 100px;
+  width: 100%;
+}
+
+.container-signup h2,
+.forgot-password h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+// Password //
+
+.text-submit {
+  font-size: 16px;
+} 
+
 
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
