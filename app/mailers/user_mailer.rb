@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
            subject: "A new contact form message from #{name}")
     end
 
-  def welcome_mail(user)
+  def welcome(user)
     @user = user
     mail to: user.email, subject: "Welcome to Happy Bikeshop"
   end

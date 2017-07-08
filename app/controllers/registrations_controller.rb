@@ -1,9 +1,8 @@
-class MyRegistrationsController < Devise::RegistrationsController
-
+class RegistrationsController < Devise::RegistrationsController
   def create
-    super do |resource|
-      Notifier.welcome_email(resource).deliver if resource.persisted?
-    end  
+    super
+    if @user.persisted?
+      UserMailer.welcome(@user).deliver_now
+    end
   end
-
 end
