@@ -56,14 +56,14 @@
           
             <div class="navbar-form navbar-right">
               <% if user_signed_in? %>
-                <%= link_to 'Edit', edit_user_registration_path %>
-              <% else %>
+                <%= link_to 'Edit', edit_user_registration_path, class:"form-control btn btn-registration ", role:"button" %>
+                  <% else %>
                 <%= link_to('Register', new_user_registration_path, class:"form-control btn btn-registration ", role:"button") %>
               <% end %>
               <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-              <% else %>
-                <%= link_to('Login', new_user_session_path, class:"form-control btn", role:"button") %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete, class:"form-control btn btn-registration ", role:"button") %>
+                <% else %>
+                  <%= link_to('Login', new_user_session_path, class:"form-control btn", role:"button") %>
               <% end %>               
             </div>
               

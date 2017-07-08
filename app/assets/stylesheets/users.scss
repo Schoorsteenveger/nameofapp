@@ -5,7 +5,8 @@
 }
 
 .users, 
-.new_user {
+.new_user,
+.edit-registration {
   position: relative;
   max-width: 400px;
   margin: 50px auto auto auto;
@@ -38,6 +39,10 @@
   color: #000;
 }
 
+.container-registration {
+  background-color: grey;
+}
+
 .actions {
   margin: 20px 0 0;
   border: none;
@@ -55,7 +60,8 @@
 
 .input-emailfield,
 .input-password,
-.input-confirmation {
+.input-confirmation,
+ {
   display: block;
   width: 100%;
   padding: 5px;
