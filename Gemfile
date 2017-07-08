@@ -62,6 +62,3 @@ ruby '2.4.0'
 
 # Added Gems
 gem 'devise'
-
-
-
