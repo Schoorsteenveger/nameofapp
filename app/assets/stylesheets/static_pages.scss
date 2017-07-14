@@ -130,9 +130,9 @@ p {
 .form-control btn {
   height: 35px;
   padding: 0 10px 0 10px;
-  background-color: rgb(31, 139, 73);
+  background-color: rgb(197, 197, 152);
   border: none;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 .navbar-form .form-control {
@@ -206,6 +206,10 @@ p {
 
 .label {
   font-size: 16px;
+}
+
+.contact-button {
+  margin-top: 15px;
 }
 
 // Images
