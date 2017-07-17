@@ -8,6 +8,7 @@
   background-position: 80%;
   background-attachment: fixed;
   padding-top: 36px;
+  margin-bottom: 30px;
 }
 
 .container-products {
@@ -39,6 +40,20 @@
   border-radius: 50px;
   border-color: rgb(197, 197, 152);
   font-size: 45px;
+}
+
+.column-right { top: 35px; }
+
+.image-border{
+  border: 1px solid grey; 
+}
+
+.column-description {
+  margin-top: 35px;
+}
+
+@media (max-width: 786px) {
+  col-md-6: 100%;
 }
 
 // They will automatically be included in application.css.
