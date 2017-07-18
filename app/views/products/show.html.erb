@@ -30,7 +30,7 @@
         <%= link_to 'Back', products_path %>
       <hr>
       <h2>Comments</h2>
-      <p><%= @product.highest_rating_comment %></p>
+        <%= @product.highest_rating_comment.try(:rating) %>
     </div>
   </div><!--end row-->
   <div class="col-xs-12">
