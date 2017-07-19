@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
+  
+  resources :orders, only: [:index, :show, :create, :destroy] 
+
   resources :users
-  resources :products
-  resources :orders, only: [:index, :show, :create, :destroy]
+  resources :products do
+    resources :comments
+  end
+  
 
   root "static_pages#landing_page"
 

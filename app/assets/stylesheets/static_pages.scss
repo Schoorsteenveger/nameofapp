@@ -265,7 +265,6 @@ footer {
 }
 
 // Containers
-.container-show { height: 1200px; }
 
 .container-show h1, #edith1 {
   color: rgb(249, 187, 3);
@@ -314,7 +313,12 @@ footer {
 .btn-registration { 
   background-color: rgb(197, 197, 152);
   color: #000;
- }
+}
+
+// Comments //
+.comments {
+  background-color: grey;
+}
 // They will automatically be included in application.css.
 
 // You can use Sass (SCSS) here: http://sass-lang.com/
