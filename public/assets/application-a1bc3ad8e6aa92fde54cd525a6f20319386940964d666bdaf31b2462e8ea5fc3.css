@@ -1,0 +1,861 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+#first {
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  background-color: #c9c9c9;
+  background: url(/assets/frog-d14e80059c6877057f0134b29a118a3f84f4317b8830315ad5592c3ca931e53a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  background-attachment: fixed;
+  height: 1100px;
+}
+
+/* line 15, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 150px 15px;
+  text-align: center;
+  z-index: 2;
+  color: #FFF;
+}
+
+/* line 24, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+#cursive {
+  color: #000;
+  text-align: center;
+  padding-top: 35px;
+}
+
+/* line 30, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+#col-p {
+  font-size: 2.4em;
+  text-align: left;
+  color: #41f4a9 !important;
+  font-family: 'Dancing Script',cursive;
+}
+
+/* line 37, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.container-fluid h2 {
+  font-size: 35px;
+  padding-top: 34px;
+}
+
+/* line 42, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.column-special-offer {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: yellow;
+  font-style: uppercase;
+  display: flex;
+  padding_top: 25px;
+}
+
+/* line 52, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.column-text-lp {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 59, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+  .container-inner {
+    width: 990px;
+  }
+}
+/* line 64, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.col-carousel {
+  float: left;
+}
+
+/* line 68, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel {
+  position: relative;
+  margin: 15px 5px 15px 5px;
+}
+
+/* line 73, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+/* line 80, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-indicators {
+  top: 50px;
+}
+
+/* line 84, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-indicators li {
+  background-color: #999;
+  border: 0;
+  border-radius: 0;
+  top: 0.1%;
+}
+
+/* line 91, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-indicators > .active {
+  background-color: #000;
+}
+
+/* line 95, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-caption {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.1%;
+  color: #000;
+}
+
+/* line 103, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-control {
+  background-image: none !important;
+  text-shadow: none;
+  color: #000;
+  opacity: 100;
+  width: 20%;
+}
+
+/* line 111, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-control:hover, .carousel-control:focus {
+  background-color: transparent;
+  color: #fff;
+  opacity: 100;
+}
+
+/* line 117, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/landing_page.scss */
+.carousel-inner > .item > a > img {
+  width: 50%;
+}
+/* line 1, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.second {
+  padding-top: 100px;
+}
+
+/* line 5, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.second h1 {
+  color: #f9bb03;
+  padding-bottom: 35px;
+}
+
+/* line 10, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.container-form {
+  border-color: black;
+  margin: 0 auto;
+  border-style: solid;
+  min-height: 420px;
+  background-color: rgba(204, 204, 204, 0.83);
+}
+
+/* line 18, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+#product_colour,
+#product_price,
+#product_name,
+#product_description,
+#product_image_url {
+  margin: 0 auto;
+  border-style: 2px solid;
+  border-color: black;
+  width: 100%;
+  border-width: 3px;
+  padding: 12px 20px;
+}
+
+/* line 31, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.new-product {
+  width: 100%;
+  height: 500px;
+}
+
+/* line 36, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.actions {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.9em;
+}
+
+/* line 42, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.container-back {
+  display: block;
+  position: relative;
+  padding-top: 35px;
+}
+
+/* line 48, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+#backh2 {
+  text-align: center;
+  padding: 35px;
+  font-size: 35px;
+}
+
+/* line 54, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/new.scss */
+.container-edit {
+  height: 1200px;
+  margin: 0 auto;
+}
+/* line 2, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+#header-bg {
+  width: 100%;
+  min-height: 350px;
+  background: url(/assets/product_header-285b3d6803da084f160d12b6b37290977f86f363e39e82eadeac5cf110ce5e8a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  padding-top: 36px;
+  margin-bottom: 30px;
+}
+
+/* line 14, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.container-products {
+  width: 90%;
+  padding: 0 45px 0 70px;
+}
+
+/* line 19, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.container-products h2 {
+  color: #000;
+  text-align: left;
+}
+
+/* line 24, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+#description p, a {
+  text-align: left;
+  color: #000;
+}
+
+/* line 29, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.add-product {
+  padding-top: 45px;
+  text-align: center;
+  min-height: 100px;
+  font-size: 1.9em;
+}
+
+/* line 36, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.add-product a {
+  border-style: solid;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 50px;
+  border-color: #c5c598;
+  font-size: 45px;
+}
+
+/* line 45, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.column-right {
+  top: 35px;
+}
+
+/* line 47, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.image-border {
+  border: 1px solid grey;
+}
+
+/* line 51, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.column-description {
+  margin-top: 35px;
+}
+
+@media (max-width: 786px) {
+  col-md-6: 100%;
+}
+/* line 59, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.button-previous {
+  height: 100px;
+}
+
+/* line 61, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/products.scss */
+.comments p {
+  text-align: left;
+}
+/* line 2, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+* {
+  margin: 0;
+}
+
+/* line 6, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+html, body {
+  font-family: 'Righteous',Open Sans, cursive;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+/* line 13, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.index-bg {
+  background: url(/assets/frog-d14e80059c6877057f0134b29a118a3f84f4317b8830315ad5592c3ca931e53a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 1000px;
+  padding: 25px;
+}
+
+/* line 23, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -142px;
+}
+
+/* line 28, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 33, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 37, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.2em;
+  font-weight: 900;
+  color: white;
+  padding: 1.2em 0;
+}
+
+/* line 46, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+/* line 53, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h6 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* line 58, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+p {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 100;
+  color: #41f4a9;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* line 68, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar, navbar-default {
+  display: block;
+  background-color: transparent;
+  margin: 35px 15px 5px 15px;
+}
+
+@media (max-width: 425px) {
+  /* line 75, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .navbar-collapse {
+    background-color: #f3f7f7;
+    z-index: 999;
+    border-color: transparent;
+  }
+}
+/* line 82, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  border-color: transparent;
+}
+
+/* line 84, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  float: none;
+  height: 50px;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 100px;
+}
+
+/* line 92, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-collapse .navbar-default .navbar-collapse {
+  border-color: transparent;
+  border: none;
+}
+
+/* line 97, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar .navbar-nav > li > a {
+  background-color: transparent;
+  color: #1f8b49;
+  font-size: 30px;
+}
+
+/* line 102, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #1f8b49;
+}
+
+/* line 105, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.dropdown-menu > li > a:hover {
+  color: #777777;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 112, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus {
+  color: #1f8b49;
+  background-color: transparent;
+}
+
+/* line 117, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-toggle:focus, .navbar-toggle:hover {
+  background-color: #babd94;
+}
+
+/* line 121, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default, .navbar-nav > .active:hover {
+  color: #a4a47e;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 128, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > .active > a {
+  background: transparent;
+}
+
+/* line 130, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-search,
+.form-control btn {
+  height: 35px;
+  padding: 0 10px 0 10px;
+  background-color: #c5c598;
+  border: none;
+  color: black;
+}
+
+/* line 139, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-form .form-control {
+  border-radius: 0px;
+}
+
+/* line 144, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.main-header {
+  width: 100%;
+  height: 400px;
+  margin: -25px 0 20px;
+  background-color: grey;
+}
+
+/* line 151, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.header-about {
+  background-image: url(/assets/color-bikes-2e9b71fee84905e44643b0e99bdd25f368d687d94f0b09d69ea51b9cd3cc755a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 35px;
+}
+
+/* line 161, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.header-contact {
+  background-image: url(/assets/bicycle-5ebed6085c5f66fb83c38c7639f876adfa2a3617877f827ee60f94282afeaf6c.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  background-attachment: fixed;
+  min-height: 1700px;
+  margin-bottom: -100px;
+  text-align: left;
+  color: #000;
+  padding-top: 200px;
+}
+
+/* line 174, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.header-contact h1, h2, h4, label {
+  color: #444444;
+}
+
+/* line 178, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container-contact {
+  display: block;
+  background-color: rgba(204, 204, 204, 0.83);
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+/* line 185, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.column-contact,
+.header-contact h4 {
+  text-align: center;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 192, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .container-form {
+    width: 690px;
+  }
+}
+/* line 197, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container-fluid p, a {
+  text-align: left;
+  width: 100%;
+  color: #000;
+}
+
+/* line 203, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.panel-body {
+  width: 100%;
+  margin: 400px auto;
+}
+
+/* line 208, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.label {
+  font-size: 16px;
+}
+
+/* line 212, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.contact-button {
+  margin-top: 15px;
+}
+
+/* line 218, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  padding: 10px;
+}
+
+/* line 220, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.bike-image {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* line 226, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.column-about {
+  padding-top: 6%;
+}
+
+/* line 228, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.frog-image {
+  position: relative;
+  width: 100%;
+  background-position: center;
+}
+
+/* line 235, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container p {
+  text-align: left;
+  color: #000;
+}
+
+/* line 240, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.column-previous, .owner-image {
+  margin-top: 20%;
+}
+
+/* line 242, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container h2 {
+  text-align: left;
+}
+
+/* line 246, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#previoush2 {
+  border-style: solid;
+  margin: 10px;
+  width: 160px;
+  padding: 19px;
+  border-radius: 50px;
+  border-color: #c5c598;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  clear: both;
+}
+
+/* line 261, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  height: 142px;
+  text-align: center;
+  width: 100%;
+  color: #f9bb03;
+  background-color: #000;
+  padding-top: 35px;
+}
+
+/* line 272, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container-show h1, #edith1 {
+  color: #f9bb03;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+/* line 279, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.container-results {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+/* line 286, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  border-radius: 0px;
+}
+
+/* line 287, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.texterea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  border-radius: 0px;
+}
+
+/* line 300, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.label {
+  width: 50%;
+  height: 60px;
+  font-size: inherit;
+}
+
+/* line 306, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn, .btn-default, contact-button {
+  background-color: #1f8b49;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* line 316, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-registration {
+  background-color: #c5c597;
+  color: #000;
+}
+
+/* line 322, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.button-previous {
+  height: 120px;
+}
+
+/* line 324, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.comments p {
+  text-align: left;
+}
+
+/* line 328, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination {
+  margin: 20px;
+}
+
+/* line 332, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 22px;
+}
+
+/* line 341, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+/* line 346, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* line 348, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.current {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+}
+
+/* line 354, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* line 3, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.new_user {
+  visible: visible;
+}
+
+/* line 7, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.users,
+.new_user,
+.edit-registration {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto auto auto;
+  padding: 20px;
+  background: #cdd2cf;
+}
+
+/* line 17, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.login-form,
+.confirmation-form,
+.passwords-form,
+.forgot-password,
+.container-signup {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  height: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #444444;
+}
+
+/* line 30, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.users h2 {
+  text-align: center;
+}
+
+/* line 32, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.login label {
+  display: block;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 70%;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+/* line 42, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.container-registration {
+  background-color: grey;
+}
+
+/* line 46, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.actions {
+  margin: 20px 0 0;
+  border: none;
+  background: #a9a98e;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 54, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.links {
+  max-width: 400px;
+  background-color: white;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+/* line 61, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.input-emailfield,
+.input-password,
+.input-confirmation {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-size: medium;
+}
+
+/* line 76, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.container-signup {
+  padding: 100px;
+  width: 100%;
+}
+
+/* line 81, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.container-signup h2,
+.forgot-password h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* line 87, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.actions input {
+  background-color: #a9a98e;
+  width: 100%;
+}
+
+/* line 94, /Users/janoutreffers/Desktop/nameofapp/app/assets/stylesheets/users.scss */
+.text-submit {
+  font-size: 16px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
