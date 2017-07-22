@@ -34,6 +34,9 @@
         <p><%= @product.highest_rating_comment.try(:rating) %><p>
         <%= render 'new_comment' %>
         <%= render 'comments' %>
+      </div>
+      <div class="text-center col-sm-12">
+        <%= will_paginate @comments %>
       </div>                 
     </div>
   </div><!--end row-->

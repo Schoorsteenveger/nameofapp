@@ -1,12 +1,13 @@
 // Main
 * {
-  margin:0;
+  margin: 0;
 }
 
 html, body {
   font-family: 'Righteous',Open Sans, cursive;
   width: 100%;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 .index-bg {
@@ -321,6 +322,36 @@ footer {
 .button-previous { height: 120px;}
 
 .comments p { text-align: left;}
+
+// Pagination //
+
+.pagination {
+  margin: 20px;
+}
+
+ .pagination a{
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  font-size: 22px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.current {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 // They will automatically be included in application.css.
 
