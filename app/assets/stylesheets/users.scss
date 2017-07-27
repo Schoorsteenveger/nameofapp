@@ -18,7 +18,8 @@
 .confirmation-form,
 .passwords-form,
 .forgot-password,
-.container-signup { 
+.container-signup,
+.container-registration { 
   background-color: rgba(0, 0, 0, .5);
   padding-top: 100px; 
   height: 1200px;
@@ -37,10 +38,6 @@
   font-size: 70%;
   letter-spacing: 2px;
   color: #000;
-}
-
-.container-registration {
-  background-color: grey;
 }
 
 .actions {
@@ -73,7 +70,9 @@
 
 // Sign up //
 
-.container-signup {
+.container-signup,
+.confirmation-form,
+.container-registration {
   padding: 100px;
   width: 100%;
 }
