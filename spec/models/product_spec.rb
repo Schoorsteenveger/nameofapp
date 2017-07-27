@@ -6,13 +6,14 @@ describe Product do
       let(:user) { User.create!(first_name: "Ollie", last_name:"Johanson", email: "olliejohanson@hotmail.com", password: "123456")}
 
     before do
+      user.skip_confirmation!
       product.comments.create!(rating: 1, user: user, body: "Awful bike!")
       product.comments.create!(rating: 3, user: user, body: "Ok bike!")
       product.comments.create!(rating: 5, user: user, body: "Great bike!")
     end
 
     it "returns the average rating of all comments" do
-      Expect(product.average_rating).to eq (3)
+      expect(product.average_rating).to eq 3
     end
 
     it "is not valid without a name" do
