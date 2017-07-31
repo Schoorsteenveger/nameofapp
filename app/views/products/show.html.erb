@@ -21,6 +21,10 @@
         €  <%= @product.price %>
       </p>
       <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+      <%= form_tag "/payments/create" do %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: 'shared/stripe_checkout_button' %>
+      <% end %>   
     </div>
 
     <div class="col-md-8 col-sm-12 col-xs-12 column-description">
@@ -42,5 +46,5 @@
   </div><!--end row-->
   <div class="col-xs-12 button-previous">
     <h3 id="previoush2"><%= link_to 'Previous', url_for(:back) %></h3>
-  </div>    
+  </div> 
 </div>
