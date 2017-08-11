@@ -1,5 +1,5 @@
-$(document).on('turbolinks:load', function(){
-  $('.rating').raty({
+var refreshRating = function() {
+    $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
     starOn: '<%= asset_path 'star-on.png' %>',
@@ -14,5 +14,17 @@ $(document).on('turbolinks:load', function(){
     score: function() {
       return $(this).attr('data-score');
     }
+  });
+};
+
+
+$(document).on('turbolinks:load ajaxSuccess', function(){ 
+  refreshRating();
+ 
+  $('.img-zoom').elevateZoom({ 
+    easing: true,
+    zoomType : "lens", 
+    lensShape : "square", 
+    lensSize : 400, 
   });
 });
