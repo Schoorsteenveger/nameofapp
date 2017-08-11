@@ -69,6 +69,7 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
 gem 'stripe'
+gem 'brakeman', :require => false
 
 
 
