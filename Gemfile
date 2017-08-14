@@ -71,6 +71,7 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'stripe'
 gem 'brakeman', :require => false
 gem 'dalli'
+gem 'redis-rails'
 
 
 
