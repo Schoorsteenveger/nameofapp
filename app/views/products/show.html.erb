@@ -43,6 +43,7 @@
         <h2>Comments</h2>
         <p><%= @product.highest_rating_comment.try(:rating) %><p>
         <%= render 'new_comment' %>
+        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
         <%= render 'comments' %>
       </div>
       <div class="text-center col-xs-12">

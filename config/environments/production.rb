@@ -96,7 +96,8 @@ Rails.application.configure do
     domain: 'heroku.com',
     enable_starttls_auto: true
   }
-
+  
+ # Use a different cache store in production.
   config.cache_store = :dalli_store,
                         (ENV["MEMCACHIER_SERVERS"] || "").split(","),
                         {:username => ENV["MEMCACHIER_USERNAME"],
@@ -106,7 +107,10 @@ Rails.application.configure do
                          :socket_failure_delay => 0.2,
                          :down_retry_delay => 60
                         }
-                        
+
+# Configure WebSockets for production
+config.web_socket_server_url = "wss://happybikeshop-1.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://happybikeshop-1.herokuapp.com', 'http://happybikeshop-1.herokuapp.com']
 end
 
 
