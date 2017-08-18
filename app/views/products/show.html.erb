@@ -3,7 +3,7 @@
 </header>
 
 <div class= "container container-show">
-  <div class= "row" id= "row-product">
+  <div class= "row" data-product-id ="<%= @product.id%>" id= "row-product">
     <div class=" col-md-6 col-sm-8 col-xs-12">
       <p><%= notice %></p>       
         <% if @product.image_url %>
@@ -41,9 +41,9 @@
       <hr>
       <div class= "comments">
         <h2>Comments</h2>
+        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
         <p><%= @product.highest_rating_comment.try(:rating) %><p>
         <%= render 'new_comment' %>
-        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
         <%= render 'comments' %>
       </div>
       <div class="text-center col-xs-12">
