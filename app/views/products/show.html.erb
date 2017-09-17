@@ -6,7 +6,7 @@
   <div class= "row" data-product-id ="<%= @product.id%>" id= "row-product">
     <div class=" col-md-6 col-sm-8 col-xs-12">
       <p><%= notice %></p>       
-        <% if @product.image_url %>
+        <% if @product.image_url.present? %>
           <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
         <% end %>
     </div>

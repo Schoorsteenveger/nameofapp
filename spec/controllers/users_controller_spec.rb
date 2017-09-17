@@ -37,6 +37,18 @@ describe UsersController, type: :controller  do
         expect(response).to redirect_to(root_path)
       end
     end
+
+    context "valid comment atributes" do
+      before do 
+        @comment = Comment.new(body:"nice", rating: 5) 
+      end
+
+      it "will return comments & rating" do
+        expect(@comment.body).to eq "nice"
+        expect(@comment.rating).to eq 5
+      end
+    end
+    
   end
 
 end

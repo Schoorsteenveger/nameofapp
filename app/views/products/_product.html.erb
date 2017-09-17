@@ -1,15 +1,23 @@
 <% cache product do %>
-  <% if product.image_url %>
-    <div class ="col-md-4 col-xs-12" id= "description">
-      <p><%= image_tag(product.image_url, class: "img-responsive")%></p>
+    <div class ="col-md-4 col-xs-12 products-grid">
+      <div class="row">
+        <% if product.image_url== nil || product.image_url==""%>
+                <%= image_tag("Empty-img.png", class: "img-responsive") %>
+              <% else %>
+                <%= link_to image_tag(product.image_url, class: "img-responsive img-rounded"), product %>
+        <% end %>
+
       <a href="#"><h2><%= product.name %></h2></a>
       <p>Colour: <%= product.colour %></p>
       <p>Price: € <%= product.price %></p>
-      <%= link_to 'Show', product %>
-      <%= link_to 'Edit', edit_product_path(product) %>
-      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Shop this', product %>
+      <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+      </div> <!--end row-->    
     </div><!--end column-->
-  <% end %>
+  
 <% end %>
 
 
