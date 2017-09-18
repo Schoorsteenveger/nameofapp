@@ -1,0 +1,34 @@
+<%= form_for(category) do |f| %>
+  <% if category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="container container-form"> 
+    <div class="row">
+      <div class="col-md-7 col-xs-12">
+        <div class="form">
+          <%= f.label :name, class: "label" %>
+          <%= f.text_field :name, class: "label" %>
+        </div>
+
+        <div class="form-field">
+          <%= f.label :desc, class: "textearea" %>
+          <%= f.text_area :desc, class: "textearea" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit class: "btn-btn-primary" %>
+        </div>
+      </div>     
+    </div>    
+  </div>
+ <% end %>
+  

@@ -2,6 +2,8 @@ class Product < ApplicationRecord
   has_many :orders
   has_many :comments
 
+  belongs_to :category
+
   validates :name, presence: true
 
   def self.search(search_term)
