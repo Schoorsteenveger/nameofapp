@@ -10,6 +10,7 @@
       <a href="#"><h2><%= product.name %></h2></a>
       <p>Colour: <%= product.colour %></p>
       <p>Price: € <%= product.price %></p>
+      <p> Category: <%= link_to product.category.name, category_path(product.category_id) if product.category %></p>
       <%= link_to 'Shop this', product %>
       <% if signed_in? && current_user.admin? %>
         <%= link_to 'Edit', edit_product_path(product) %>

@@ -5,6 +5,7 @@ class Product < ApplicationRecord
   belongs_to :category
 
   validates :name, presence: true
+  validates :category, presence: true
 
   def self.search(search_term)
     like_operator = Rails.env.production? ? 'ilike' : 'like'
