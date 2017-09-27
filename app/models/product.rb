@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   has_many :comments
 
   belongs_to :category
+  has_many :categories
 
   validates :name, presence: true
   validates :category, presence: true

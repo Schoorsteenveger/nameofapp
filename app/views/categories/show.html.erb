@@ -1,19 +1,24 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12 col-xs-12">
+    <div class= "container container-edit">
+      <p id="notice"><%= notice %></p>
+      <p>
+        <strong>Name:</strong>
+        <%= @category.name %>
+      </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+      <p>
+        <strong>Desc:</strong>
+        <%= @category.desc %>
+      </p>
 
-<p>
-  <strong>Desc:</strong>
-  <%= @category.desc %>
-</p>
+      <h3> Products under this category </h3>
+      <% Product.where(category_id: @category.id).each do |product| %>
+      <li> <%= product.name %> </li>
+      <% end %>
 
-<h3> Products under this category </h3>
-<% Product.where(category_id: @category.id).each do |product| %>
-<li> <%= product.name %> </li>
-<% end %>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+      <%= link_to 'Edit', edit_category_path(@category) %> |
+      <%= link_to 'Back', categories_path %>
+    </div>
+  </div>
+</div>

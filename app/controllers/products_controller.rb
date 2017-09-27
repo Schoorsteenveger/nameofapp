@@ -25,7 +25,8 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @product = Product.new @categories = Category.all.map{|c| [ c.name, c.id ] }
+    @product = Product.new 
+    @categories = Category.all.map{|c| [ c.name, c.id ] }
   end
 
   # GET /products/1/edit
@@ -36,6 +37,7 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    @product.category_id = params[:category_id]
 
     respond_to do |format|
       if @product.save
