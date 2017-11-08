@@ -1,6 +1,7 @@
 // Main
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,7 +21,6 @@ html {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height:1700px;
 }
 
 .page-wrap {
@@ -142,7 +142,7 @@ p {
 .navbar-form .form-control {
   border-radius: 0px;
 }
-// Header
+// About
 
 .main-header {
   width: 100%;
@@ -158,6 +158,11 @@ p {
   background-position: center;
   background-attachment: fixed;
   margin-bottom: 35px;
+}
+
+.container-about {
+  min-height: 1000px;
+  padding-top: 35px;
 }
 
 // Contact
@@ -238,8 +243,6 @@ p {
   text-align: left;
   color: #000;
 }
-
-.column-previous, .owner-image { margin-top: 20%;}
 
 .container h2 {
   text-align: left;
