@@ -22,10 +22,10 @@
               <% @products.each do |product| %>    
                 <div class="item<%= " active" if product == @products.first %>">
                   <% if product.image_url %>
-                    <%= image_tag(product.image_url) %>
+                    <%= image_tag (product.image_url) %>
                   <% end %>      
                   <div class="carousel-caption">
-                    <%= link_to (product.name)%>     
+                    <%= link_to (product.name), products_path %>     
                   </div>
                 </div>
               <% end %>
