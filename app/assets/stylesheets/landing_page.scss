@@ -1,5 +1,4 @@
 #first {
-  position: relative;
   text-align: center;
   color: #FFF;
   width:100%;
@@ -13,11 +12,16 @@
 
 header .header-content {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 150px 15px;
   text-align: center;
   z-index: 2;
   color: #FFF;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -142px;
+  /* Pad bottom by footer height */
+  padding: 55px 0 142px;
 }
 
 #cursive {
@@ -33,19 +37,26 @@ header .header-content {
   font-family: 'Dancing Script',cursive;
 }
 
+@media screen and (max-width: 425px){
+  #col-p {
+    font-size: 1.6em;
+  }
+}
+
 .container-fluid h2 {
-  font-size: 35px;
-  padding-top: 34px;
+  font-size: 2.5em;
+  padding-top: 2.5;
 }
 
 .column-special-offer {
-  height: 200px;
-  width: 200px;
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
   background: yellow;
   font-style: uppercase;
   display: flex;
-  padding_top: 25px;
+  padding-top: 35px;
+  overflow: hidden;
 }
 
 .column-text-lp {
